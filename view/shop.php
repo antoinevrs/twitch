@@ -13,7 +13,7 @@ if(isset($photo)){
                 echo '<img src="../twitch/public/image/'.$r['name'].'">';
                 echo '<p>'.$r['products_name'].'</p>';
                 echo '<p>'.$r['price'].'€</p>';
-                echo '<p>'.$r['description'].'<p>';
+                echo '<p>'.$r['description'].'</p>';
                 echo '<button class="add_cart">Ajouter au panier</button>';
             echo '</div>';
     }

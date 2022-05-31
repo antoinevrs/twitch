@@ -1,7 +1,6 @@
 <?php
+
 ob_start();
-    
-if(isset($auth)) echo $auth;
     
 ?>
 
@@ -15,7 +14,7 @@ if(isset($auth)) echo $auth;
 
 <h2>Je créé mon compte</h2>
 
-<form>
+<form action="index.php?page=account" class="form" method="POST">
     <input type="text" name="lastname" placeholder="Nom"/>
     <input type="text" name="firstname" placeholder="Prénom"/>
     <input type="text" name="mail" placeholder="Email"/>
