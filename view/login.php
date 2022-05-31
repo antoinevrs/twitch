@@ -1,19 +1,30 @@
 <?php
 ob_start();
-
-//les session prennent la valeur du formulaire pour se connecter direct a la page compte apres inscription
-    /*$_SESSION['Auth']=$_POST['compte'];
-    $_SESSION['name']=$_POST['login'];
-    $auth = '<h2>Merci de vous être enregistré !</h2>';*/
+    
+if(isset($auth)) echo $auth;
     
 ?>
 
-<form class="form" method="POST">
+<h2>Je me connecte</h2>
+
+<form action="index.php?page=account" class="form" method="POST">
     <input type="text" name="name" placeholder="Identifiant">
     <input type="password" name="pwd" placeholder="Mot de passe">
     <input type="submit" value="Connexion"/>
 </form>
 
+<h2>Je créé mon compte</h2>
+
+<form>
+    <input type="text" name="lastname" placeholder="Nom"/>
+    <input type="text" name="firstname" placeholder="Prénom"/>
+    <input type="text" name="mail" placeholder="Email"/>
+    <input type="text" name="password" placeholder="Mot de passe"/>
+    <input type="text" name="address" placeholder="adresse"/>
+    <input type="number" name="phone" placeholder="Numéro de téléphone"/>
+    <input type="date" name="birthdate"/>
+    <input type="submit" value="Créé"/>
+</form>
 
 <?php
 $content = ob_get_clean();

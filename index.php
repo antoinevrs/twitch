@@ -26,6 +26,10 @@ switch($page){
         require './controller/cart.php';
         break;
     
+    case 'login' : 
+        require './controller/login.php';
+        break;
+    
     default : 
         require './controller/home.php';
 }

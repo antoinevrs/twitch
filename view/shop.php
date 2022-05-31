@@ -1,6 +1,8 @@
 <?php
 ob_start();
 
+session_start();
+
 echo '<h1>La boutique</h1>';
 
 echo '<div class="container_shop">';

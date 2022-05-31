@@ -1,5 +1,7 @@
 <?php
 ob_start();
+
+session_start();
 ?>
 
 <h1>Planning</h1>
